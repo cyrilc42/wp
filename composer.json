@@ -1,0 +1,26 @@
+{
+    "name": "mint/wp_custom",
+    "authors": [
+        {
+            "name": "Dynzels",
+            "email": "dynzels@gmail.com"
+        }
+    ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "johnpbloch/wordpress": "4.9.*"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+        "content/plugins/{$name}/": ["type:wordpress-plugin"],
+        "content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  }
+}
